@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart SIP Calculator – Visual Investment Growth</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="card">
+
+    <!-- LEFT -->
+    <div>
+      <h1>Smart SIP Calculator</h1>
+      <div class="sub">See how your money grows over time</div>
+
+      <label>Monthly Investment (₹)</label>
+      <input type="number" id="monthly" value="10000">
+
+      <label>Expected Return (% p.a.)</label>
+      <input type="number" id="rate" value="12">
+
+      <label>Time Period (Years)</label>
+      <input type="number" id="years" value="15">
+
+      <label>Step-up (% yearly)</label>
+      <input type="number" id="stepup" value="5">
+
+      <button class="button" id="download">Download Results</button>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="results">
+      <div class="metric">
+        <p>Total Invested</p>
+        <h2 id="invested">₹ 0</h2>
+      </div>
+
+      <div class="metric">
+        <p>Total Returns</p>
+        <h2 id="returns" class="green">₹ 0</h2>
+      </div>
+
+      <div class="metric">
+        <p>Future Value</p>
+        <h2 id="value" class="highlight">₹ 0</h2>
+      </div>
+
+      <canvas id="chart"></canvas>
+
+      <div class="sub">Monthly compounding. Returns are estimates.</div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
